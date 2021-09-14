@@ -1,12 +1,12 @@
 ﻿define(['jquery',
         'underscore',
         'backbone',
-        //'kendo',
+        'kendo',
         'views/shipView',
         "routers/router",
         'components/dataService',
         'text!templates/ships.html'],
- function ($, _, Backbone, shipView, Router, dataService, shipsTemplate) {
+ function ($, _, Backbone, kendo, shipView, Router, dataService, shipsTemplate) {
      var inicioView = Backbone.View.extend({
          //template: _.template($('#inicio-template').html()),
          template: _.template(shipsTemplate),
@@ -34,7 +34,7 @@
              //this.$el.find('#main').append(this.template());
              // var cont = 1;
 
-            /* var grid = $("#grid").data("kendoGrid");
+             /*var grid = $("#grid").data("kendoGrid");
              var grid = kendo.grid("#grid");
              grid.dataSource({
                  type: "json",

@@ -3,6 +3,7 @@
     //By default load any module IDs from scripts/lib
     baseUrl: 'scripts/lib',
     paths: {
+        jquery: 'kendo/js/jquery.min',
         models: '../models',
         collections: '../collections',
         views: '../views',
@@ -34,7 +35,7 @@
             exports: '_'
         },
         'kendo': {
-            deps: ['jQuery'],
+            deps: ['jquery'],
             exports: "kendo"
         }
 
